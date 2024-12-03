@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/styles/admin.css" />
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <h1>Admin Dashboard</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Users</a></li>
+          <li><a href="#">Exams</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="/src/index.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="dashboard-container">
+      <section class="dashboard-section">
+        <h2>Manage Users</h2>
+        <button class="btn">Add New User</button>
+        <table class="dashboard-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>john.doe@example.com</td>
+              <td>Teacher</td>
+              <td>
+                <button class="btn btn-small">Edit</button>
+                <button class="btn btn-small btn-danger">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>jane.smith@example.com</td>
+              <td>Student</td>
+              <td>
+                <button class="btn btn-small">Edit</button>
+                <button class="btn btn-small btn-danger">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
